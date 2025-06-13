@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Recommended for you</h2>
+{% for item in recommendations %}
+<div class="item">
+    <h3><a href="{{ url_for('item_detail', item_id=item['id']) }}">{{ item['title'] }}</a></h3>
+    <p>Type: {{ item['type'] }}</p>
+    <p>{{ item['content'] }}</p>
+</div>
+{% endfor %}
+{% endblock %}

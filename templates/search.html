@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Search Results for "{{ query }}"</h2>
+{% if results %}
+    {% for item in results %}
+    <div class="item">
+        <h3><a href="{{ url_for('item_detail', item_id=item['id']) }}">{{ item['title'] }}</a></h3>
+        <p>Type: {{ item['type'] }}</p>
+        <p>{{ item['content'] }}</p>
+    </div>
+    {% endfor %}
+{% else %}
+    <p>No results found.</p>
+{% endif %}
+{% endblock %}

@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>{{ item['title'] }}</h2>
+<p>Type: {{ item['type'] }}</p>
+<p>{{ item['content'] }}</p>
+<p>Tags: {{ ', '.join(item['tags']) }}</p>
+<a href="{{ url_for('index') }}">Back to home</a>
+{% endblock %}
