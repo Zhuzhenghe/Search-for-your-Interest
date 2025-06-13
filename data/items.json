@@ -1,0 +1,7 @@
+[
+  {"id": 1, "title": "Introduction to AI", "type": "article", "tags": ["technology", "ai"], "content": "Learn the basics of AI."},
+  {"id": 2, "title": "Top Sci-Fi Movies", "type": "video", "tags": ["scifi", "movies"], "content": "A list of great science fiction movies."},
+  {"id": 3, "title": "Photography Tips", "type": "article", "tags": ["photography"], "content": "Improve your photography skills."},
+  {"id": 4, "title": "Space Exploration Documentary", "type": "video", "tags": ["space", "documentary"], "content": "A documentary about space travel."},
+  {"id": 5, "title": "Healthy Cooking Recipes", "type": "article", "tags": ["cooking"], "content": "Try these healthy recipes."}
+]
